@@ -44,3 +44,19 @@ F:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\obj\Debug
 F:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\obj\Debug\EntityPractice.csproj.CopyComplete
 F:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\obj\Debug\EntityPractice.dll
 F:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\obj\Debug\EntityPractice.pdb
+C:\Users\Javy\Documents\GIT\Books-Entity-Framework\EntityPractice\EntityPractice\bin\EntityPractice.dll.config
+C:\Users\Javy\Documents\GIT\Books-Entity-Framework\EntityPractice\EntityPractice\bin\EntityPractice.dll
+C:\Users\Javy\Documents\GIT\Books-Entity-Framework\EntityPractice\EntityPractice\bin\EntityPractice.pdb
+C:\Users\Javy\Documents\GIT\Books-Entity-Framework\EntityPractice\EntityPractice\bin\EntityFramework.dll
+C:\Users\Javy\Documents\GIT\Books-Entity-Framework\EntityPractice\EntityPractice\bin\EntityFramework.SqlServer.dll
+C:\Users\Javy\Documents\GIT\Books-Entity-Framework\EntityPractice\EntityPractice\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Javy\Documents\GIT\Books-Entity-Framework\EntityPractice\EntityPractice\bin\EntityFramework.xml
+C:\Users\Javy\Documents\GIT\Books-Entity-Framework\EntityPractice\EntityPractice\bin\EntityFramework.SqlServer.xml
+C:\Users\Javy\Documents\GIT\Books-Entity-Framework\EntityPractice\EntityPractice\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Javy\Documents\GIT\Books-Entity-Framework\EntityPractice\EntityPractice\bin\es\EntityFramework.resources.dll
+C:\Users\Javy\Documents\GIT\Books-Entity-Framework\EntityPractice\EntityPractice\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Javy\Documents\GIT\Books-Entity-Framework\EntityPractice\EntityPractice\obj\Debug\EntityPractice.csprojAssemblyReference.cache
+C:\Users\Javy\Documents\GIT\Books-Entity-Framework\EntityPractice\EntityPractice\obj\Debug\EntityPractice.csproj.CoreCompileInputs.cache
+C:\Users\Javy\Documents\GIT\Books-Entity-Framework\EntityPractice\EntityPractice\obj\Debug\EntityPractice.csproj.CopyComplete
+C:\Users\Javy\Documents\GIT\Books-Entity-Framework\EntityPractice\EntityPractice\obj\Debug\EntityPractice.dll
+C:\Users\Javy\Documents\GIT\Books-Entity-Framework\EntityPractice\EntityPractice\obj\Debug\EntityPractice.pdb
