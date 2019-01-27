@@ -1,0 +1,551 @@
+Contar letras en una frase
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="aplicacion">
+       <input type="text" v-on:keyup="mostrarF" v-model="frase">
+        <p>{{contarA}}</p>
+
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script> 
+    <script>
+        var app = new Vue({
+            el: '#aplicacion',
+            data:{
+                frase:'',
+
+                contarA:0
+            },
+            methods:
+            {
+                mostrarF: function(){ 
+var cont=0;     
+                    for(var f = 0; f < this.frase.length; f++)
+                    {
+                        if(this.frase[f] == 'a' || this.frase[f] == 'A')
+                        {
+                            cont++;
+                        }
+                        this.contarA = this.contarA + cont;
+                    }
+                }
+            }
+        })
+    </script>
+</html>
+
+
+Numeros exitentes entre dos numeros
+<!doctype html>
+<html>
+<head>
+  <title>Prueba Vue</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+  <div id="aplicacion">
+        {{Agregar}}
+    <form v-on:submit.prevent="contar">
+      <p>
+        Ingrese valor 1:<input type="number" v-model="n1">
+      </p>
+      <p>
+        Ingrese valor 2:<input type="number" v-model="n2">
+      </p>
+
+      <p><input type="submit" value="Agregar"></p>
+
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script>
+    var app=new Vue({
+      el: '#aplicacion',
+      data:{ 
+        n1: 0,
+        n2: 0,
+        Agregar:''        
+      },
+      methods: {
+        contar: function() {
+var num = '';
+for(var c = parseInt(this.n1)+1; c < parseInt(this.n2); c++)
+{
+
+num += c + ', ';
+
+}
+
+        this.Agregar = num.replace(/,(\s+)?$/, '');  
+        }
+      }
+    })
+  </script>
+</body>
+</html>
+
+Operaciones con radio button
+<!doctype html>
+<html>
+<head>
+  <title>Prueba Vue</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+ <div id="aplicacion">
+<input type="number" v-model="n1">
+<input type="number" v-model="n2">
+    <p>
+      <input type="radio" value="Sumar" v-model="op"id="sum">
+      <label for="sum">Suma</label>
+    </p>        
+    <p>
+      <input type="radio" value="Restar" v-model="op" id="res">
+      <label for="res">Resta</label>
+    </p>
+    <p>
+      <button v-on:click="operacion">Operacion</button>
+    </p>
+    <p>{{op}} {{r}}</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script>
+    var app=new Vue({
+      el: '#aplicacion',
+      data:{ 
+        n1:0,
+        n2:0,
+        op: '',
+        r:0
+      },
+      methods:{
+        operacion: function(){
+        if(this.op == 'Sumar')
+{
+this.r = parseInt(this.n1) + parseInt(this.n2);
+}
+else
+{
+this.r = parseInt(this.n1) - parseInt(this.n2);
+}     
+      }
+}
+    })
+  </script>
+</body>
+</html>
+
+
+
+Dias checkbox
+
+<!doctype html>
+<html>
+<head>
+  <title>Prueba Vue</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+ <div id="aplicacion">
+   <p><input type="checkbox" v-model="dias" value="Lunes">Lunes</p>
+   <p><input type="checkbox" v-model="dias" value="Martes">Martes</p>
+   <p><input type="checkbox" v-model="dias" value="Miercoles">Miércoles</p>
+   <p><input type="checkbox" v-model="dias" value="Jueves">Jueves</p>
+   <p><input type="checkbox" v-model="dias" value="Viernes">Viernes</p>
+   <p><input type="checkbox" v-model="dias" value="Sabado">Sábado</p>
+   <p><input type="checkbox" v-model="dias" value="Domingo">Domingo</p>      
+   <h1 style="color:red" v-if="dias.length<5">Debe seleccionar al menos 5 días</h1>
+   <ol>
+     <li v-for="dia in dias">{{dia}}</li>
+   </ol>
+   <p>Cantidad de días:{{dias.length}}</p>
+ </div>
+ 
+ <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+ <script>
+   var app=new Vue({
+       el: '#aplicacion',
+       data:{ 
+        dias: []
+       }
+   })
+ </script>
+</body>
+</html>
+
+
+Saludos en idiomas con control select
+<!doctype html>
+<html>
+<head>
+  <title>Prueba Vue</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+ <div id="aplicacion">
+   <p><select v-model="saludo" v-on:change="Saludo">
+     <option disabled value="">Seleccione un idioma</option>
+     <option>Español</option>
+     <option>Inglés</option>
+     <option>Jalisquillo</option>
+     <option>Chilango</option>
+     <option>Naco</option>
+   </select>
+</p>
+
+   <p>Saludo:{{saludo}}</p>
+ </div>
+ 
+ <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+ <script>
+   var app=new Vue({
+       el: '#aplicacion',
+       data:{ 
+        saludo:''
+       },
+methods:
+{
+Saludo: function()
+{
+
+switch(this.saludo)
+{
+    case Español:
+    'Hola'
+    break;
+    case Inglés:
+    'Welcome'
+    break;
+    case Jalisquillo:
+    'Qué onda'
+    break;
+    case 'Chilango':
+    'Quiubas'
+    break;
+    case Naco:
+    'Mamaceta'
+    break;
+
+}
+        if(this.saludo == 'Español')
+        {
+        this.saludo = 'Hola'
+        }
+        else if(this.saludo == 'Inglés')
+        {
+        this.saludo = 'Welcome'
+        }
+        else if(this.saludo == 'Jalisquillo')
+        {
+        this.saludo = 'Qué onda'
+        }
+        else if(this.saludo == 'Chilango')
+        {
+        this.saludo = 'Quiubas'
+        }
+        else if(this.saludo == 'Naco')
+        {
+        this.saludo = 'Mamaceta'
+        }
+}
+}
+   })
+ </script>
+</body>
+</html>
+
+Ver en textarea lo mismo que se escribe en otra
+<!doctype html>
+<html>
+<head>
+  <title>Prueba Vue</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+ <div id="aplicacion">
+   <p><textarea v-model="comentarios" v-on:keyup="Agregar" cols="100" rows="5" maxlength="200"></textarea></p>
+
+<p><textarea cols="100" rows="5" maxlength="200" v-model="comentarios2" v-on:keyup="Agregar">{{comentarios2}}</textarea></p>
+
+   <p>Cantidad de caracteres ingresados: {{comentarios.length}}</p>
+ </div>
+ 
+ <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+ <script>
+   var app=new Vue({
+       el: '#aplicacion',
+       data:{ 
+         comentarios:'',
+comentarios2:''
+       },
+methods:
+{
+Agregar:function()
+{
+this.comentarios2 = this.comentarios;
+
+}
+
+}
+   })
+ </script>
+</body>
+</html>
+
+Computadas proponer e-mail
+<!doctype html>
+<html>
+<head>
+  <title>Prueba Vue</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+  <div id="aplicacion">
+    <p>Ingrese su nombre:<input type="text" v-model="nombre"></p>    
+    <p>Mail propuesto: {{mail}}</p>
+  </div>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script>
+   var app=new Vue({
+       el: '#aplicacion',
+       data: { 
+         nombre: ''
+       },
+       computed:{
+        mail: function () {
+           return this.nombre + '@gmail.com';
+        }
+       }
+   })
+  </script>
+</body>
+</html>
+
+
+Detectar espacio y cambiar colores
+<!doctype html>
+<html>
+<head>
+  <title>Prueba Vue</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+  <div id="aplicacion">
+    <p>
+      <input v-bind:style="{'color': Cambiar}" type="text" v-model="t">
+    </p>      
+
+  </div>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script>
+   var app=new Vue({
+       el: '#aplicacion',
+       data: { 
+        t:''
+       },
+   computed: {
+         Cambiar: function() {
+           if (this.t.includes(' '))
+             return '#f00';
+           else
+             return '#000';
+         }
+       }
+
+   })
+  </script>
+</body>
+</html>
+
+Tachar lenguajes con click
+<!doctype html>
+<html>
+<head>
+  <title>Prueba Vue</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <style>
+    .tach {
+      text-decoration: line-through;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div id="aplicacion">
+
+        <ol>
+         <li v-for="lenguaje in lenguajes"
+             v-on:click="Tachar(lenguaje)"
+             v-bind:class="{tach: lenguaje.tachado == true}">
+            {{lenguaje.nombre}}
+         </li>
+        </ol>
+  </div>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script>
+var app=new Vue({
+      el: '#aplicacion',
+      data:{ 
+        lenguajes: [
+          {
+            nombre: 'C',
+            tachado:false
+          },
+          {
+            nombre: 'Java',
+            tachado:false
+          },
+          {
+            nombre: 'PHP',
+            tachado:false
+          },
+          {
+            nombre: 'Python',
+            tachado:false
+          },
+          {
+            nombre: 'Ruby',
+            tachado:false
+          },
+          {
+            nombre: 'Kotlin',
+            tachado:false
+          },
+          {
+            nombre: 'C#',
+            tachado:false
+          }] 
+      },
+methods:{
+Tachar:function(leng){
+if(leng.tachado == false)
+   leng.tachado = true;
+else
+   leng.tachado = false;
+}
+}
+    })
+  </script>
+</body>
+</html>
+
+
+ajax
+<!doctype html>
+<html>
+<head>
+  <title>Prueba Vue</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+  <div id="aplicacion">
+    <button v-on:click="recuperarPost()">Recuperar Post</button>
+    
+      <table border="1">
+        <tr>
+          <td>codigo</td>
+<td>descripcion</td>
+<td>precio</td>
+</tr>
+<template v-for="nota in notas">
+<tr>
+        <td>{{nota.codigo}}</td>
+<td>{{nota.descripcion}}</td>
+<td>{{nota.precio}}</td>
+      </table>
+      {{nota.body}}
+ 
+</tr>
+    </template>
+  </div>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.3.5"></script>
+  <script>
+var app=new Vue({
+      el: '#aplicacion',
+      data:{ 
+        notas:[
+  {
+    "codigo": 1,
+    "descripcion": "papas",
+    "precio": 12.33
+  },
+  {
+    "codigo": 2,
+    "descripcion": "manzanas",
+    "precio": 54
+  }
+]
+      },
+      methods: {
+        recuperarPost: function () {
+          this.$http.get('http://scratchya.com.ar/vue/datos.php').then(function (respuesta) {
+                 this.notas=respuesta.body
+          })
+        }
+      }
+    })
+  </script>
+</body>
+</html>
+
+
+beforeCreate, create, beforeMount y mounted
+<!doctype html>
+<html>
+<head>
+  <title>Prueba Vue</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+  <div id="aplicacion">
+   
+      
+
+  </div>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.3.5"></script>
+  <script>
+var app=new Vue({
+      el: '#aplicacion',
+beforeCreate: function() {
+console.log('antesCreada...');
+},
+      created: function() {
+        console.log('creada...');
+      },
+beforeMount: function(){
+console.log('antesMontada...');
+},
+mounted: function(){
+console.log('montada...');
+}
+    })
+  </script>
+</body>
+</html>

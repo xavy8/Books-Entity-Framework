@@ -1,0 +1,46 @@
+C:\Users\luperez\source\repos\EntityPractice\EntityPractice\bin\EntityPractice.dll.config
+C:\Users\luperez\source\repos\EntityPractice\EntityPractice\bin\EntityPractice.dll
+C:\Users\luperez\source\repos\EntityPractice\EntityPractice\bin\EntityPractice.pdb
+C:\Users\luperez\source\repos\EntityPractice\EntityPractice\bin\EntityFramework.dll
+C:\Users\luperez\source\repos\EntityPractice\EntityPractice\bin\EntityFramework.SqlServer.dll
+C:\Users\luperez\source\repos\EntityPractice\EntityPractice\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\luperez\source\repos\EntityPractice\EntityPractice\bin\EntityFramework.xml
+C:\Users\luperez\source\repos\EntityPractice\EntityPractice\bin\EntityFramework.SqlServer.xml
+C:\Users\luperez\source\repos\EntityPractice\EntityPractice\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\luperez\source\repos\EntityPractice\EntityPractice\bin\es\EntityFramework.resources.dll
+C:\Users\luperez\source\repos\EntityPractice\EntityPractice\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\luperez\source\repos\EntityPractice\EntityPractice\obj\Debug\EntityPractice.csproj.CoreCompileInputs.cache
+C:\Users\luperez\source\repos\EntityPractice\EntityPractice\obj\Debug\EntityPractice.dll
+C:\Users\luperez\source\repos\EntityPractice\EntityPractice\obj\Debug\EntityPractice.pdb
+C:\Users\luperez\source\repos\EntityPractice\EntityPractice\obj\Debug\EntityPractice.csprojResolveAssemblyReference.cache
+H:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\bin\EntityPractice.dll.config
+H:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\bin\EntityPractice.dll
+H:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\bin\EntityPractice.pdb
+H:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\bin\EntityFramework.dll
+H:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\bin\EntityFramework.SqlServer.dll
+H:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+H:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\bin\EntityFramework.xml
+H:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\bin\EntityFramework.SqlServer.xml
+H:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+H:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\bin\es\EntityFramework.resources.dll
+H:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\bin\es\EntityFramework.SqlServer.resources.dll
+H:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\obj\Debug\EntityPractice.csprojResolveAssemblyReference.cache
+H:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\obj\Debug\EntityPractice.csproj.CoreCompileInputs.cache
+H:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\obj\Debug\EntityPractice.dll
+H:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\obj\Debug\EntityPractice.pdb
+F:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\bin\EntityPractice.dll.config
+F:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\bin\EntityPractice.dll
+F:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\bin\EntityPractice.pdb
+F:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\bin\EntityFramework.dll
+F:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\bin\EntityFramework.SqlServer.dll
+F:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\bin\EntityFramework.xml
+F:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\bin\EntityFramework.SqlServer.xml
+F:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\bin\es\EntityFramework.resources.dll
+F:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\bin\es\EntityFramework.SqlServer.resources.dll
+F:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\obj\Debug\EntityPractice.csprojAssemblyReference.cache
+F:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\obj\Debug\EntityPractice.csproj.CoreCompileInputs.cache
+F:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\obj\Debug\EntityPractice.csproj.CopyComplete
+F:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\obj\Debug\EntityPractice.dll
+F:\Desarrollos web\CRUD Entity Framework\EntityPractice\EntityPractice\obj\Debug\EntityPractice.pdb

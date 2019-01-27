@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="IntelisisTmpModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'IntelisisTmp.dbo.TblEntity' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="TblEntity">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Titulo" Type="varchar" MaxLength="50" />
+    <Property Name="Autor" Type="varchar" MaxLength="30" />
+    <Property Name="Genero" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityContainer Name="IntelisisTmpModel1StoreContainer">
+    <EntitySet Name="TblEntity" EntityType="Self.TblEntity" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TblEntity].[Id] AS [Id], 
+    [TblEntity].[Titulo] AS [Titulo], 
+    [TblEntity].[Autor] AS [Autor], 
+    [TblEntity].[Genero] AS [Genero]
+    FROM [dbo].[TblEntity] AS [TblEntity]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

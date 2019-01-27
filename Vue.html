@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="aplicacion">
+       
+        <!-- <input type="text" v-model="nombre">
+        <input type="text" v-model="mensaje">
+        <input type="number" v-model="edad"></p>
+        <p v-if="edad>=18 && edad<20">Es mayor de edad.</p>
+        <p v-else-if="edad>=20 && edad<=30">En los 20s.</p>
+        <p v-else>Tiene dos dígitos</p>
+
+        <p>{{nombre}}</p>
+        <p>{{mensaje}}</p> -->
+
+        <ul>
+            <li v-for="lenguaje in lenguajes">{{lenguaje}}</li>
+        </ul>
+
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script> 
+    <script>
+        // var app = new Vue({
+        //     el: '#aplicacion',
+        //     data:{
+        //         mensaje: 'Vue'
+        //     }
+        // })
+
+        // var app = new Vue({
+        //     el: '#aplicacion',
+        //     data:{
+        //         nombre: '',
+        //         mensaje: ' ',
+        //         edad: 0
+        //     }
+        // })
+
+        var app = new Vue({
+            el: '#aplicacion',
+            data:{
+                lenguajes: ['C', 'VB', 'C#', 'Java', 'Javascript', 'Vue', 'Asp.Net', 'HTML', 'Totonaca', 'Arameo']
+            }
+        })
+    </script>
+</html>

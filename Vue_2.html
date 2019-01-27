@@ -1,0 +1,144 @@
+<!-- <!doctype html>
+<html>
+<head>
+  <title>Prueba Vue</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+  <div id="aplicacion">
+    <hola-mundo></hola-mundo>
+  </div> 
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+<script>
+  Vue.component('hola-mundo', {
+    template: `<p>
+                 Jabon
+              </p>`+
+              `<h1>Y</h1>`
+  });
+
+  var app=new Vue({
+    el: '#aplicacion'
+  });
+</script>
+</body>
+</html> -->
+
+<!-- <!doctype html>
+<html>
+<head>
+  <title>Prueba Vue</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+  <div id="aplicacion">
+    <hola-mundo idioma="ingles"></hola-mundo>
+    <hola-mundo idioma="castellano"></hola-mundo>
+  </div>
+ 
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script>
+  Vue.component('hola-mundo', {
+    props: ['idioma'],
+    template: `<div>
+                  <p v-if="idioma=='castellano'">Hola mundo</p>
+                  <p v-if="idioma=='ingles'">Hello world</p>
+              </div>`
+  })
+
+  var app=new Vue({
+    el: '#aplicacion'
+  })
+</script>
+
+</body>
+</html>
+
+
+--elegir idioma componente
+<!doctype html>
+<html>
+<head>
+  <title>Prueba Vue</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+  <div id="aplicacion">
+<select v-model="idioma">
+<option></option>
+<option>castellano</option>
+<option>ingles</option>
+</select>
+    <hola-mundo v-bind:idioma="idioma"></hola-mundo>
+  </div>
+ 
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script>
+  Vue.component('hola-mundo', {
+    props: ['idioma'],
+    template: `<div>
+                  <p v-if="idioma=='castellano'">Hola mundo</p>
+                  <p v-if="idioma=='ingles'">Hello world</p>
+              </div>`
+  })
+
+  var app=new Vue({
+    el: '#aplicacion',
+data: {
+idioma: ''}
+  })
+</script>
+
+</body>
+</html> -->
+
+<!doctype html>
+<html>
+<head>
+  <title>Prueba Vue</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+  <div id="aplicacion">
+    <articulos v-bind:datos="datos"></articulos>
+  </div>
+  
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script>
+  Vue.component('articulos', {
+    props:['datos'],
+    template: `<div>
+                 <table border="1">
+                 <tr><td>Código</td><td>Descripción</td><td>Precio</td></tr>
+                 <tr v-for="art in datos"><td>{{art.codigo}}</td><td>{{art.descripcion}}</td><td>{{art.precio}}</td></tr>
+                 </table>
+               </div>`
+  })
+
+  var app=new Vue({
+    el: '#aplicacion',
+    data: {
+      datos: [{
+              codigo: 1, 
+              descripcion: 'papas',
+              precio: 12.52
+              },{
+              codigo: 2, 
+              descripcion: 'naranjas',
+              precio: 21
+              },{
+              codigo: 3, 
+              descripcion: 'peras',
+              precio: 18.20
+              }]      
+    }
+  })
+</script>
+
+</body>
+</html>
